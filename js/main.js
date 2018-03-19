@@ -107,15 +107,15 @@ $('.mid_carousel').slick({
  	autoplay: true,
  	arrows: false,
  	slidesToShow: 1,
-  	slidesToScroll: 1,
+  slidesToScroll: 1,
 
  });
 
 
 //OVERLAY1
-$(".bl1").click(function(){
-        $(".overlay1").toggle();
-    });
+$(".model1").click(function(){
+  $(this).find(".overlay1").toggle();
+});
 
 
 
