@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Star Clothes</title>
+	<script src="js/modernizr-custom.js"></script>
+	<link rel="stylesheet" href="css/star_clothes.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick/slick/slick-theme.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="js/animate.css">
+	
+	
+</head>
+<body>
+<header>
+	<div class="pre-header">
+		<div class="container">
+			<div class="pre-header_main">
+				<div class="pre-header_menu">
+					<ul class="pre_ul">
+						<li><a href="#">Help</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Delivery Information</a></li>
+					</ul><!--end ul-->
+				</div><!--End pre-header menu-->
+				<div class="phone">
+					<p class="pre_number"><i class="fa fa-phone" aria-hidden="true"></i>  Call us: 123 456 78 90</p>
+				</div><!--End phone-->
+			</div><!--End pre-header main-->	
+		</div><!--End container-->
+	</div><!--End pre-header-->
+	
+
+			<div class="header">
+				<div class="container">
+					<div class="main-header">
+						<div class="logo">
+							<a href="#" id="logo"><img src="pic/logo.png" alt=""></a>
+						</div><!--End logo-->
+
+						<div class="login">
+							<div class="login_btns">
+								<div class="login_btn">
+									<a href="#" class="login_txt" onclick="document.getElementById('id01').style.display='block'">
+										<span>Login</span>
+									</a>
+
+									 <div id="id01" class="modal1"><!--Modal Login-->
+												<span onclick="document.getElementById('id01').style.display='none'" class="close" title="close modal">&times;</span>
+												<form class="modal-content animate" action="/action_page.php">
+													<div class="imgcontainer">
+														<img src="pic/darthvader.jpg" alt="" class="avatar">									
+													</div>
+											
+													<div class="cont_block">
+														<label><b>Username</b></label>
+														<input class="log_input" type="text" placeholder="Enter Username" name="uname" required><br><br>
+											
+														<label><b>Password</b></label>
+														<input class="log_input" type="password" placeholder="Enter Password" name="psw" required><br><br>
+											
+														<button class="submit_btn" type="submit">Login</button>
+														<input type="checkbox" checked="checked"><span class="inputp">Remember me</span>
+											
+													</div>
+													<div class="cont_block1" style="background-color: #f1f1f1">
+														<button class="cancel_btn" type="button" onclick="document.getElementById('id01').style.display='none'">Cancel
+														</button>
+														<span class="psw">Forgot <a href="#">password?</a></span>
+													</div>
+														
+													
+												</form>
+									</div> <!--End Modal Login-->
+								</div><!--End login_btn-->			
+												
+								<div class="register_btn">				
+									<a href="#" class="register" onclick="document.getElementById('id02').style.display='block'">
+										<span>Register</span>
+									</a>
+
+									<div id="id02" class="modal"><!-- The Modal Register -->
+									  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+									  <form class="modal-content animate" action="/action_page.php">
+									    <div class="container_box">
+									      <label><b>Email</b></label>
+									      <input type="text" placeholder="Enter Email" name="email" required>
+
+									      <label><b>Password</b></label>
+									      <input type="password" placeholder="Enter Password" name="psw" required>
+
+									      <label><b>Repeat Password</b></label>
+									      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+									      <input type="checkbox" checked="checked"> Remember me
+									      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+									      <div class="clearfix">
+									        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+									        <button type="submit" class="signupbtn">Sign Up</button>
+									      </div>
+									    </div>
+									  </form>
+									</div><!-- The Modal Register -->
+
+								</div>				
+								<div class="cart">
+									<span class="my_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> My Cart ( 0 ): $0</span>
+								</div>				
+										
+								<div class="checkout_btn">				
+									<a href="#" class="checkout">
+										<span>Checkout</span>
+									</a>
+								</div>
+							</div>		
+							<div class="header_search">
+								<form class="form_search">
+									<input type="text" id="search-input1" class="form-search-input1" placeholder="Search">	
+									<a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>	
+								</form>
+							</div><!--end panel search-->
+
+						</div><!--end login-->
+					</div><!--End main-header-->
+				</div><!--End container-->
+			</div><!--End header-->
+			<div id="touch-menu">MENU</div>
+					
+			<div class="menu">
+				<ul class="header_menu">
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">NEW ARRIVALS</a></li>
+					<li><a href="#">TUXEDO</a></li>
+					<li><a href="#">SWEATER</a></li>
+					<li><a href="#">SHOES</a></li>
+					<li><a href="#">GLASSES</a></li>
+					<li><a href="#">T-SHIRT</a></li>
+					<li><a href="#">WATCHES</a></li>
+				</ul>
+			</div><!--End menu-->
+	
+</header>
+
+<section class="sale">
+	<div class="container">
+		<div class="top_slider">
+			<div class="item">
+				<img class="image-responsive carou_pic" src="pic/sale.jpg" alt="">
+			</div>
+			<div class="item">
+				<img class="image-responsive carou_pic" src="pic/sale.jpg" alt="">
+			</div>
+			<div class="item">
+				<img class="image-responsive carou_pic" src="pic/sale.jpg" alt="">
+				      
+		 	</div>
+		</div>
+	</div>	 
+</section>
+
+<section>
+	<div class="container">
+		<div class="arrival">
+			
+		
+		<h2 class="arrival_txt">New Arrivals</h2>
+		<div class="pic_block1">
+
+			<div class="model1 bl1">
+				<img class="modl_img" src="pic/model1.jpg" alt="">
+				<!--OVERLAY-->	
+
+				 <div class="overlay1">
+					<img class="modl1" src="pic/model1.jpg" alt="">
+					<p class="brand">Dress DIESEL</p>
+					<p class="price">$5 520</p>
+					<div class="block1">
+						<span class="mod-span_1">Size</span>					
+						<div class="box1_1"><a href="#">1</a></div>
+						<div class="box1_1"><a href="#">2</a></div>
+						<div class="box1_1"><a href="#">3</a></div>
+						<div class="box1_1"><a href="#">4</a></div>
+						
+					</div>
+					<div class="overlay_btn1">
+						<a href="#"> BUY</a>
+					</div>
+				</div>	 
+
+				<!--END OVERLAY-->
+			
+				<p class="brand">Dress DIESEL</p>
+				<p class="price">$5 520</p>
+			</div>
+			
+
+			<div class="model1 bl2">
+				<img class="modl_img" src="pic/model2.jpg" alt="">
+
+			<!--OVERLAY-->	
+
+				 <div class="overlay1">
+					<img class="modl1" src="pic/model2.jpg" alt="">
+					<p class="brand">SKIRT G-Star RAW</p>
+					<p class="price">$5 520</p>
+					<div class="block1">
+						<span class="mod-span_1">Size</span>					
+						<div class="box1_1"><a href="#">1</a></div>
+						<div class="box1_1"><a href="#">2</a></div>
+						<div class="box1_1"><a href="#">3</a></div>
+						<div class="box1_1"><a href="#">4</a></div>
+						
+					</div>
+					<div class="overlay_btn1">
+						<a href="#"> BUY</a>
+					</div>
+				</div>	 
+
+				<!--END OVERLAY-->
+				<p class="brand">SKIRT G-Star RAW</p>
+				<p class="price">$5 520</p>
+			</div>
+			<div class="model1 bl3">
+				<img class="modl_img" src="pic/model3.jpg" alt="">
+
+			<!--OVERLAY-->	
+
+				 <div class="overlay1">
+					<img class="modl1" src="pic/model3.jpg" alt="">
+					<p class="brand">Extra mini summer<br>BY OLEANDR SCOTT</p>
+					<p class="price">$32 520</p>
+					<div class="block1">
+						<span class="mod-span_1">Size</span>					
+						<div class="box1_1"><a href="#">1</a></div>
+						<div class="box1_1"><a href="#">2</a></div>
+						<div class="box1_1"><a href="#">3</a></div>
+						<div class="box1_1"><a href="#">4</a></div>
+						
+					</div>
+					<div class="overlay_btn1">
+						<a href="#"> BUY</a>
+					</div>
+				</div>	 
+
+				<!--END OVERLAY-->
+				<p class="brand">Extra mini summer<br>BY OLEANDR SCOTT</p>
+				<p class="price">$32 520</p>
+			</div>
+			<div class="model1 bl4">
+				<img class="modl_img" src="pic/model4.jpg" alt="">
+
+				<!--OVERLAY-->	
+
+				 <div class="overlay1">
+					<img class="modl1" src="pic/model4.jpg" alt="">
+					<p class="brand">SKIRT Pepe Jeans black one</p>
+					<p class="price">$2 520</p>
+					<div class="block1">
+						<span class="mod-span_1">Size</span>					
+						<div class="box1_1"><a href="#">1</a></div>
+						<div class="box1_1"><a href="#">2</a></div>
+						<div class="box1_1"><a href="#">3</a></div>
+						<div class="box1_1"><a href="#">4</a></div>
+						
+					</div>
+					<div class="overlay_btn1">
+						<a href="#"> BUY</a>
+					</div>
+				</div>	 
+
+				<!--END OVERLAY-->
+				
+				<p class="brand">SKIRT Pepe Jeans black one</p>
+				<p class="price">$2 520</p>
+			</div>
+			
+			
+			<div class="model1 bl5">
+				<img class="modl_img" src="pic/model2.jpg" alt="">
+
+			<!--OVERLAY-->	
+
+				 <div class="overlay1">
+					<img class="modl1" src="pic/model2.jpg" alt="">
+					<p class="brand">SKIRT G-Star RAW</p>
+				<p class="price">$5 520</p>
+					<div class="block1">
+						<span class="mod-span_1">Size</span>					
+						<div class="box1_1"><a href="#">1</a></div>
+						<div class="box1_1"><a href="#">2</a></div>
+						<div class="box1_1"><a href="#">3</a></div>
+						<div class="box1_1"><a href="#">4</a></div>
+						
+					</div>
+					<div class="overlay_btn1">
+						<a href="#"> BUY</a>
+					</div>
+				</div>	 
+
+				<!--END OVERLAY-->	
+				<p class="brand">SKIRT G-Star RAW</p>
+				<p class="price">$5 520</p>
+			</div>
+			<div class="model1 bl6">
+				<img class="modl_img" src="pic/model5.jpg" alt="">
+
+			<!--OVERLAY-->	
+
+				 <div class="overlay1">
+					<img class="modl1" src="pic/model5.jpg" alt="">
+					<p class="brand">SKIRT DIESEL</p>
+					<p class="price pr_col"> <sup class="sup">6 500</sup> $5 520</p>
+					<div class="block1">
+						<span class="mod-span_1">Size</span>					
+						<div class="box1_1"><a href="#">1</a></div>
+						<div class="box1_1"><a href="#">2</a></div>
+						<div class="box1_1"><a href="#">3</a></div>
+						<div class="box1_1"><a href="#">4</a></div>
+						
+					</div>
+					<div class="overlay_btn1">
+						<a href="#"> BUY</a>
+					</div>
+				</div>	 
+
+				<!--END OVERLAY-->
+				<p class="brand">SKIRT DIESEL</p>
+				<p class="price pr_col"> <sup class="sup">6 500</sup> $5 520</p>
+			</div>
+			<div class="model1 bl7">
+				<img class="modl_img" src="pic/model6.jpg" alt="">
+
+			<!--OVERLAY-->	
+
+				 <div class="overlay1">
+					<img class="modl1" src="pic/model6.jpg" alt="">
+					<p class="brand">SKIRT DIESEL</p>
+					<p class="price">$5 520</p>
+					<div class="block1">
+						<span class="mod-span_1">Size</span>					
+						<div class="box1_1"><a href="#">1</a></div>
+						<div class="box1_1"><a href="#">2</a></div>
+						<div class="box1_1"><a href="#">3</a></div>
+						<div class="box1_1"><a href="#">4</a></div>
+						
+					</div>
+					<div class="overlay_btn1">
+						<a href="#"> BUY</a>
+					</div>
+				</div>	 
+
+				<!--END OVERLAY-->
+				<p class="brand">SKIRT DIESEL</p>
+				<p class="price">$5 520</p>
+			</div>
+			<div class="model1 bl8">
+				<img class="modl_img" src="pic/model7.jpg" alt="">
+
+			<!--OVERLAY-->	
+
+				 <div class="overlay1">
+					<img class="modl1" src="pic/model7.jpg" alt="">
+					<p class="brand">TOP Tommy Hilfiger</p>
+					<p class="price">$5 520</p>
+					<div class="block1">
+						<span class="mod-span_1">Size</span>					
+						<div class="box1_1"><a href="#">1</a></div>
+						<div class="box1_1"><a href="#">2</a></div>
+						<div class="box1_1"><a href="#">3</a></div>
+						<div class="box1_1"><a href="#">4</a></div>
+						
+					</div>
+					<div class="overlay_btn1">
+						<a href="#"> BUY</a>
+					</div>
+				</div>	 
+
+				<!--END OVERLAY-->
+				<p class="brand">TOP Tommy Hilfiger</p>
+				<p class="price">$5 520</p>
+			</div>
+			
+			<div class="model1 bl9">
+				<img class="modl_img" src="pic/model8.jpg" alt="">
+
+			<!--OVERLAY-->	
+
+				 <div class="overlay1">
+					<img class="modl1" src="pic/model8.jpg" alt="">
+					<p class="brand">SKIRT DIESEL</p>
+					<p class="price">$5 520</p>
+					<div class="block1">
+						<span class="mod-span_1">Size</span>					
+						<div class="box1_1"><a href="#">1</a></div>
+						<div class="box1_1"><a href="#">2</a></div>
+						<div class="box1_1"><a href="#">3</a></div>
+						<div class="box1_1"><a href="#">4</a></div>
+						
+					</div>
+					<div class="overlay_btn1">
+						<a href="#"> BUY</a>
+					</div>
+				</div>	 
+
+				<!--END OVERLAY-->
+				<p class="brand">SKIRT DIESEL</p>
+				<p class="price">$5 520</p>
+			</div>
+			<div class="model1 bl10">
+				<img class="modl_img" src="pic/model9.jpg" alt="">
+
+			<!--OVERLAY-->	
+
+				 <div class="overlay1">
+					<img class="modl1" src="pic/model9.jpg" alt="">
+					<p class="brand">SKIRT G-Star RAW</p>
+					<p class="price pr_col"><sup class="sup">6 500</sup> $5 520</p>
+					<div class="block1">
+						<span class="mod-span_1">Size</span>					
+						<div class="box1_1"><a href="#">1</a></div>
+						<div class="box1_1"><a href="#">2</a></div>
+						<div class="box1_1"><a href="#">3</a></div>
+						<div class="box1_1"><a href="#">4</a></div>
+						
+					</div>
+					<div class="overlay_btn1">
+						<a href="#"> BUY</a>
+					</div>
+				</div>	 
+
+				<!--END OVERLAY-->
+				<p class="brand">SKIRT G-Star RAW</p>
+				<p class="price pr_col"><sup class="sup">6 500</sup> $5 520</p>
+			</div>
+			<div class="model1 bl11">
+				<img class="modl_img" src="pic/model4.jpg" alt="">
+
+			<!--OVERLAY-->	
+
+				 <div class="overlay1">
+					<img class="modl1" src="pic/model4.jpg" alt="">
+					<p class="brand">SKIRT Tommy Hilfiger mini</p>
+					<p class="price">$32 520</p>
+					<div class="block1">
+						<span class="mod-span_1">Size</span>					
+						<div class="box1_1"><a href="#">1</a></div>
+						<div class="box1_1"><a href="#">2</a></div>
+						<div class="box1_1"><a href="#">3</a></div>
+						<div class="box1_1"><a href="#">4</a></div>
+						
+					</div>
+					<div class="overlay_btn1">
+						<a href="#"> BUY</a>
+					</div>
+				</div>	 
+
+				<!--END OVERLAY-->
+				<p class="brand">SKIRT Tommy Hilfiger mini</p>
+				<p class="price">$32 520</p>
+			</div>
+
+			<div class="model1 bl12">
+				<img class="modl_img" src="pic/model10.jpg" alt="">
+
+            <!--OVERLAY-->	
+
+				 <div class="overlay1">
+					<img class="modl1" src="pic/model10.jpg" alt="">
+					<p class="brand">SKIRT G-Star RAW</p>
+					<p class="price">$5 520</p>
+					<div class="block1">
+						<span class="mod-span_1">Size</span>					
+						<div class="box1_1"><a href="#">1</a></div>
+						<div class="box1_1"><a href="#">2</a></div>
+						<div class="box1_1"><a href="#">3</a></div>
+						<div class="box1_1"><a href="#">4</a></div>
+						
+					</div>
+					<div class="overlay_btn1">
+						<a href="#"> BUY</a>
+					</div>
+				</div>	 
+
+				<!--END OVERLAY-->
+				<p class="brand">SKIRT G-Star RAW</p>
+				<p class="price">$5 520</p>
+			</div>
+		</div>
+		</div><!--End Arrivals-->
+	</div><!--End container-->
+</section>
+
+
+<section>
+	<div class="container">
+		<div class="brands">
+			<h2 class="brands_h2">Brands</h2>
+			<div class="brands_logo">
+				<div><img class="brand-img" src="pic/brand6a.png" alt=""></div>
+				<div><img class="brand-img" src="pic/brand5a.png" alt=""></div>
+				<div><img class="brand-img" src="pic/brand4a.png" alt=""></div>
+				<div><img class="brand-img" src="pic/brand3a.png" alt=""></div>
+				<div><img class="brand-img" src="pic/brand2a.png" alt=""></div>
+				<div><img class="brand-img" src="pic/brand1a.png" alt=""></div>
+			</div>
+		</div><!--End brands-->
+	</div><!--End container-->
+</section>
+
+<section>
+	<div class="container">
+
+		<div class="middle_slider">
+			<div class="img_slider">
+				<img class="sl_img"  src="pic/marni.jpg" alt="">
+			</div><!--slider_mid-->
+		
+				<div class="mid_carousel">
+					<div class="item">
+						<img class="carousel_pic"  src="pic/midbag.jpg" alt="">
+					</div>
+					<div class="item">
+						<img class="carousel_pic"  src="pic/midbag.jpg" alt="">
+					</div>
+					<div class="item">
+						<img class="carousel_pic"  src="pic/midbag.jpg" alt="">   
+					</div>
+				</div>
+		</div><!--End middle slider--> 
+	</div><!--End Container-->	
+</section>
+
+<section>
+	<div class="container">
+		<h2 class="news_h2">NEWS</h2>
+		<div class="news">
+				
+			<div class="news_img">
+				<div class="news1">
+					<img src="pic/news1.jpg" class="image-responsive news_pic" alt="">
+					<div class="date">
+						<p class="news_p"><i class="fa fa-pencil" aria-hidden="true"></i>Stone Clad</p>
+						<p class="news_p"><i class="fa fa-calendar" aria-hidden="true"></i>27.01.2017</p>
+						
+					</div>
+						<p class="news_p1">WE ADDED MANY THINGS YOU MAY LIKE</p>
+						<p class="news_p2">It is a long established fact that a reader will be distracted.</p>
+						<button class="news_btn">Learn more</button>
+				</div>
+
+				<div class="news2">
+					<img src="pic/news2.jpg" class="image-responsive news_pic" alt="">
+				<div class="date">
+						<p class="news_p"><i class="fa fa-pencil" aria-hidden="true"></i>Stone Clad</p>
+						<p class="news_p"><i class="fa fa-calendar" aria-hidden="true"></i>27.01.2017</p>
+						
+					</div>
+						<p class="news_p1">WE ADDED MANY THINGS YOU MAY LIKE</p>
+						<p class="news_p2">It is a long established fact that a reader will be distracted.</p>
+						<button class="news_btn">Learn more</button>	
+				</div>
+
+				<div class="news3">
+					<img  src="pic/news3.jpg" class="image-responsive news_pic" alt="">
+				<div class="date">
+						<p class="news_p"><i class="fa fa-pencil" aria-hidden="true"></i>Stone Clad</p>
+						<p class="news_p"><i class="fa fa-calendar" aria-hidden="true"></i>27.01.2017</p>
+						
+					</div>
+						<p class="news_p1">WE ADDED MANY THINGS YOU MAY LIKE</p>
+						<p class="news_p2">It is a long established fact that a reader will be distracted.</p>
+						<button class="news_btn">Learn more</button>
+							
+				</div>
+			</div><!--END news_img-->
+		</div><!--End News-->
+	</div>	<!--End Container-->
+</section>
+
+<section>
+	<div class="container">
+		<div class="contact">
+			<h2 class="contact_h2">Contact Us</h2>
+			
+			<div class="contact_form">
+				<form action="/action_page.php">
+					<div class="name_input">
+						<div class="first">
+						    <label for="firstname"></label>
+						    <input type="text" id="fname" name="firstname" required placeholder="* NAME" class="input_width">
+						</div>
+						<div class="last">
+						    <label for="lastname"></label>
+						    <input type="text" id="lname" name="lastname" required placeholder="* SURNAME" class="input_width">
+					    </div><br>
+					</div>
+
+				    <label for="email"></label>
+				    <input type="text" id="email" name="email" class="input_width_email" required placeholder="* EMAIL"><br>
+
+				    <label for="subject"></label>
+				    <textarea id="subject" name="subject" placeholder="MESSAGE" class="txtarea" style="height:200px"></textarea><br>
+
+				    <input type="submit" class="submit-contact_btn" value="Submit">
+  </form>
+			</div>
+		</div><!--End Contact Us-->
+	</div><!--End Container-->
+</section>
+
+<footer>
+	<div class="main_footer">
+		<div class="container">
+		
+		
+			
+			<div class="footer_content">
+				<div class="footer_block1">
+					<h3 class="block_h3">SHOPS</h3>
+					<div class="socials">
+						<p class="block1_p">New In </p>
+						<p class="block1_p">Women</p>
+						<p class="block1_p">Men</p>
+						<p class="block1_p">Shoes</p>
+						<p class="block1_p">Bags & Accessories</p>
+						<p class="block1_p">Top Brands</p>
+						<p class="block1_p">Sale & Special Offers</p>
+						<p class="block1_p">Lookbook</p>
+					</div>
+				</div>
+				<div class="footer_block2">
+					<h3 class="block_h3">INFORMATION</h3>
+					<div class="socials">
+						<p class="block1_p">About us </p>
+						<p class="block1_p">Customer Service</p>
+						<p class="block1_p">New Collection</p>
+						<p class="block1_p">Best Sellers</p>
+						<p class="block1_p">Manufacturers</p>
+						<p class="block1_p">Privacy policy</p>
+						<p class="block1_p">Terms & condition</p>
+						<p class="block1_p">Blog</p>
+					</div>
+				</div>
+				<div class="footer_block3">
+					<h3 class="block_h3">CUSTOMER SERVICE</h3>
+					<div class="socials">
+						<p class="block1_p">Search Terms </p>
+						<p class="block1_p">Advanced Search</p>
+						<p class="block1_p">Orders and Returns</p>
+						<p class="block1_p">Contact us</p>
+						<p class="block1_p">RSS</p>
+						<p class="block1_p">Help & FAQs</p>
+						<p class="block1_p">Consultant</p>
+						<p class="block1_p">Store Locations</p>
+					</div>
+				</div>
+
+
+				<div class="footer_block4">
+					<div class="block_top">
+						<div class="block_txt">
+							<h3 class="block_h3 bl_h3">STAY CONNECTED</h3>
+						</div>
+						<div class="block_box" >
+							<div  class="box"><a href="#logo"><i class="fa fa-caret-up" aria-hidden="true"></i></a></div>
+						</div>
+					</div>
+						<div class="social">
+							<div class="icons">
+								<a href="#"><i class="fa fa-facebook " aria-hidden="true"></i></a>
+							</div>
+							<div class="icons">
+								<a href="#"><i class="fa fa-twitter " aria-hidden="true"></i></a>
+							</div>
+							<div class="icons">
+								<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+							</div>
+							<div class="icons">
+								<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+							</div>
+							<div class="icons">
+								<a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a>
+							</div>
+						</div>
+
+					<p class="copyright">SUBSCRIBE in OUR LETTER</p>
+
+					<div class="btn_search_footer">
+						<form class="catalin">
+						    <input type="text" class="footer_srch" placeholder="Enter Your Email" required>
+						    <button type="submit" class="footer_btn_sr4">SUBSCRIBE</button>
+  						</form>
+					</div><!--btn_search_footer-->
+				</div><!--footer_block4-->
+			</div>	<!--End footer_content-->			
+		</div><!--End container-->
+	</div><!--End main footer-->
+	
+</footer> 
+
+
+
+
+
+
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/jquery.lettering-0.6.1.min.js"></script>
+	<script src="js/jquery.textillate.js"></script>
+
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="libs/slick/slick/slick/slick.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
